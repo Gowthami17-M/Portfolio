@@ -1,0 +1,71 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 80%;
+    margin-top: 3%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+.uparrow{
+    color: white;
+    font-size: 40px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.uparrow:hover{
+    transform: translateY(-20%);
+}
+
+.instagram{
+    border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;    
+}
+
+.instagram:hover{
+    background:linear-gradient(to top right,yellow,#feda75, orange,rgb(250,126,30) , #d62976, rgb(184, 47, 191),purple, blue);
+}
+
+.github{
+    border-radius: 50%;
+}
+
+.github:hover{
+    background-color: black;
+}
+
+.twitter:hover{
+    color: rgb(0, 119, 255);
+}
+
+.linkedin:hover{
+    color: rgb(0, 119, 255);
+}
+
+.socialmedia{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_text{
+    color: rgb(143, 143, 143);
+    margin-top: 0;
+}
+
+
+
+@media (max-width:900px){
+    .uparrow{
+        font-size: 30px;
+        width: 100%;
+    }
+}

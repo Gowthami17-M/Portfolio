@@ -1,0 +1,310 @@
+.Menubar {
+  position: sticky;
+  top: 0px;
+  z-index: 55;
+  background: rgb(16, 11, 39);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  height: 50px;
+}
+
+.bgfilter{
+  position: absolute;
+  z-index: -1;
+}
+
+.MenuList {
+  margin: 0px;
+  display: flex;
+  height: 50px;
+  width: 90%;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 0px;
+}
+
+
+.MenuList li button {
+  text-decoration: none;
+  /* color: rgb(122, 157, 255); */
+  font-weight: 600;
+  scroll-behavior: smooth;
+  border-style: none;
+  background-color: transparent;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.MenuList li button.active {
+  transition-duration: 0.2s;
+  /* color: rgb(255, 14, 14); */
+  font-size: 26px;
+  justify-content: top;
+  border: 1px solid;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 0px 6px 1px rgb(158, 158, 158) inset;
+}
+
+.MenuList li button{
+  transition: 0.4s;
+
+}
+
+.MenuList li button:hover{
+  border: 1px solid;
+  border: 1px solid;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+}
+
+
+.MenuList li .projectmenu{
+  background-image: linear-gradient(
+    to right,
+    #513534 0,
+           #cb9b51 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+    );
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 26px;
+}
+
+.MenuList li .projectmenu:hover{
+  padding: 6px;
+  border: 1px solid gold;
+}
+
+.checkbox1{
+  display: none;
+}
+
+
+.hamburger {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: max-content;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.hamburger .line{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin-block: 3px;
+  border-radius: 4px;
+  transition: transform 1s,
+  opacity .25s;
+}
+
+.hamburger.active .line:nth-child(1){
+  transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3){
+  transform: translateY(-8px)
+  rotate(-45deg);
+}
+
+.menuicon2 {
+  width: max-content;
+}
+
+.checkbox2{
+  display: none;
+}
+
+.themebackground {
+  width: 70px;
+  height: 26px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 1s;
+  background: url(../../public/images/theme/night.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 10px rgb(14, 14, 14) inset;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.themeforground {
+  position: absolute;
+  height: 23px;
+  transform: rotateZ(180deg);
+  width: 23px;
+  margin-left: 2px;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+  background-image: url(../../public/images/theme/moon.png);
+  background-repeat: repeat;
+  background-position: -3px;
+  background-size: 130%;
+  box-shadow: 5px 0px 10px rgb(0, 0, 0) inset ;
+}
+
+.checkbox2:checked ~ .themebackground .themeforground {
+  transform: translateX(42px);
+  background-image: url(../../public/images/theme/sun.png);
+  background-position: center;
+  box-shadow: 5px 0px 10px rgb(58, 58, 58);
+}
+
+.checkbox2:checked ~ .themebackground{
+  background: url(../../public/images/theme/morning.jpeg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size:cover ;
+  background-size: 100px;
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+
+  .Menubar{
+    justify-content: space-around;
+    height: 40px;
+    top: -2px;
+  }
+  .MenuList {
+    display: none;
+  }
+
+
+  .MenuList li {
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-bottom-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: drop 0.8s;
+  }
+
+  .MenuList li button{
+    font-size: 16px;
+  }
+
+  .MenuList li button.active {
+    border-style: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .checkbox1:checked ~ .MenuList {
+    position: absolute;
+    top: 34px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 10;
+    height: max-content;
+  }
+
+
+  .checkbox1:checked ~ .MenuList>.bgfilter{
+    height: 100vh;
+    width: 100%;
+    filter: blur(10px);
+    background-color: rgba(34, 34, 34, 0.833);
+  }
+
+  .hamburger {
+    display: block;
+    width: 80%;
+  }
+
+  .hamburger .line{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-block: 3px;
+    border-radius: 4px;
+    transition: transform .5s,
+  }
+
+
+  .menuicon2 {
+    color: white;
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+
+  .themebackground {
+    width: 45px;
+    height: 16px;
+  }
+
+  .themeforground{
+    height: 14px;
+    width: 14px;
+  }
+
+  .checkbox2:checked ~ .themebackground .themeforground {
+    transform: translateX(27px);
+  }
+
+  @keyframes drop {
+    0%{
+      opacity: 0;
+      transform: translateY(-40%);
+    }
+    20%{
+      opacity: 0.2;
+      transform: translateY(0%);
+    }
+    40%{
+      opacity: 0.4;
+      transform: translateY(-80%);
+    }
+    60%{
+      opacity: 0.6;
+      transform: translateY(0%);
+    }
+    80%{
+      opacity: 0.8;
+      transform: translateY(-20%);
+    }
+    100%{
+      opacity: 1;
+    }
+    
+  }
+}
+
+

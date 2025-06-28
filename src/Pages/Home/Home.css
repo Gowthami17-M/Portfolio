@@ -1,0 +1,492 @@
+.homecontainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bgimage{
+    background-image: url(../../../public/images/theme/dark_intro.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px);
+    width: 100%;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+.homelight{
+    background-image: url(../../../public/images/theme/light_intro.webp);
+}
+
+
+.bg-text{
+    position: absolute;
+    width: max-content;
+}
+
+.intro{
+    font-size: 60px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name{
+    background: linear-gradient(to right,blue,rgb(183, 0, 189),rgb(255, 0, 34),rgb(182, 0, 158),rgb(129, 4, 219),blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100%;
+    transition-duration: 0.5s;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    position: relative;
+}
+
+.name::after{
+    content: '';
+    position: absolute;
+    /* border: 1px solid; */
+    bottom: 6px;
+    transition: .4s;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,blue,rgb(183, 0, 189),rgb(255, 0, 34),rgb(182, 0, 158),rgb(129, 4, 219),blue);
+}
+
+.name_dark::after{
+    content: '';
+    position: absolute;
+    /* border: 1px solid; */
+    bottom: 6px;
+    transition: .4s;
+    left: 2px;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(
+	to right,
+	#513534 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+}
+
+
+.name_dark{
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100%;
+    transition-duration: 0.5s;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    background-image: linear-gradient(
+	to right,
+	#513534 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+}
+
+.name_drak:hover{
+    background-size: 200%;
+}
+
+.name_dark:hover::after{
+    width: 0%;
+}
+
+.name:hover::after{
+    width: 0%;
+}
+
+.name:hover{
+    background-size: 200%;
+}
+
+.namedescription{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.namedescription span{
+    border: 1px solid;
+    margin-left: 5px;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    animation: blink 1s infinite;
+}
+
+
+
+
+/*Coding Profiles*/
+
+.CodingProfiles{
+    display: grid;
+    grid-template-areas: "HackerRank CodeChef Leetcode Codeforces";
+    width: max-content;
+    margin-top: 10px;
+
+}
+
+.HackerRank{
+    width: 100px;
+    height: 100px;
+    background-image: url(../../../public/images/images/HackerRank_logo.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+
+.HackerRank:hover{
+    content: '';
+    transform: translateY(-10px);
+}
+
+.HackerRank:hover::before{
+    content: 'HackerRank';
+    font-weight: 500;
+    font-size: 16px;
+    animation: fade 0.5s ease;
+    position: relative;
+    top: 70px;
+    left: 10px;
+    background: linear-gradient(to left,#077e03,#6ccb00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.CodeChef{
+    width: 90px;
+    height: 90px;
+    background-image: url(../../../public/images/images/CodeChef.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+
+.CodeChef:hover{
+    content: '';
+    transform: translateY(-10px);
+}
+
+.CodeChef:hover::before{
+    content: 'Codechef';
+    font-weight: 500;
+    font-size: 16px;
+    animation: fade 0.5s ease;
+    position: relative;
+    top: 70px;
+    left: 10px;
+    background: linear-gradient(to left,#5f4d00,#c2b994);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Leetcode{
+    width: 100px;
+    height: 100px;
+    background-image: url(../../../public/images/images/LeetCode.png);
+    background-position: 0px 5px;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+
+.Leetcode_light{
+    width: 100px;
+    height: 100px;
+    background-image: url(../../../public/images/images/LeetCode_logo.png);
+    background-position: 0px 5px;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+
+.Leetcode:hover{
+    content: '';
+    transform: translateY(-10px);
+}
+
+.Leetcode:hover::before{
+    content: 'Leetcode';
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    animation: fade 0.5s ease;
+    position: relative;
+    top: 70px;
+    left: 18px;
+    background: linear-gradient(to left,rgb(215, 169, 0),rgb(104, 104, 104),rgb(127, 127, 127));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Codeforces{
+    width: 90px;
+    height: 90px;
+    background-image: url(../../../public/images/images/codeforces.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+
+.Codeforces:hover{
+    content: '';
+    transform: translateY(-10px);
+}
+
+.Codeforces:hover::before{
+    content: 'Codeforces';
+    font-weight: 500;
+    font-size: 16px;
+    animation: fade 0.5s ease;
+    position: relative;
+    top: 75px;
+    left: 5px;
+    background: linear-gradient(to right,#00b7ff,#ff0000,rgb(115, 84, 154));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.aboutbutton{
+    width: max-content;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.aboutbutton a{
+    background: linear-gradient(to right,rgb(0, 187, 255),rgb(255, 0, 93),rgb(123, 0, 145));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    color: #00b7ff;
+    transition-duration: 0.1s;
+    border: 1px solid;
+    border-radius: 5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+}
+
+.aboutbutton a:hover{
+    text-shadow:0px 0px 100px #00b7ff;
+    -webkit-text-fill-color: #001a33;
+    text-decoration: none;
+    background: rgb(198, 251, 255);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0) inset;
+}
+
+.aboutbutton:hover{
+    box-shadow:0px 0px 20px #00b7ff;
+    border: 1px solid;
+    color: aqua;
+    padding: 5px;
+    margin-left: -3px;
+}
+
+
+
+
+@media (max-width:851px){
+    .intro{
+        font-size: 40px;
+    }
+
+    .name{
+        font-size: 43px;
+    }
+    .coding{
+        width: 80px;
+        height: 80px;
+    }
+    .HackerRank{
+        width: 90px;
+        height: 90px;
+    }
+    .HackerRank:hover::before{
+        top: 65px;
+        left:8px;
+        font-size: 14px;
+    }
+
+    .CodeChef:hover::before{
+        top: 65px;
+        left: 8px;
+        font-size: 14px;
+    }
+
+    .Codeforces:hover::before{
+        top: 65px;
+        font-size: 14px;
+    }
+
+    .Leetcode:hover::before{
+        top: 60px;
+        left: 10px;
+        font-size: 14px;
+    }
+    .aboutbutton{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:550px) {
+    .intro{
+        font-size: 26px;
+        gap: 10px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .name::after{
+        bottom: 0px;
+    }
+    .namedescription{
+        font-size: 16px;
+    }
+    .coding{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .HackerRank{
+        width: 60px;
+        height: 60px;
+    }
+    .HackerRank:hover::before{
+        top: 35px;
+        left:-5px;
+        font-size: 14px;
+    }
+
+    .CodeChef:hover::before{
+        top: 35px;
+        left: -5px;
+        font-size: 14px;
+    }
+
+    .Codeforces:hover::before{
+        top: 35px;
+        left: -10px;
+        font-size: 14px;
+    }
+
+    .Leetcode:hover::before{
+        top: 30px;
+        left: 0px;
+        font-size: 14px;
+    }
+    .aboutbutton{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .intro{
+        font-size: 26px;
+        gap: 10px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .name::after{
+        bottom: 0px;
+    }
+    .namedescription{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:400px) {
+    .intro{
+        font-size: 26px;
+        gap: 5px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .name::after{
+        bottom: 0px;
+    }
+    .namedescription{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:280px){
+    .name{
+        font-size: 23px;
+    }
+    .coding{
+        width: 50px;
+        height: 50px;
+    }
+
+    .HackerRank{
+        width: 60px;
+        height: 60px;
+    }
+    .HackerRank:hover::before{
+        top: 40px;
+        left:-5px;
+        font-size: 12px;
+    }
+
+    .CodeChef:hover::before{
+        top: 40px;
+        left: 0px;
+        font-size: 12px;
+    }
+
+    .Codeforces:hover::before{
+        top: 40px;
+        left:-5px;
+        font-size: 12px;
+    }
+
+    .Leetcode:hover::before{
+        top: 40px;
+        left: 0px;
+        font-size: 12px;
+    }
+    .aboutbutton{
+        font-size: 16px;
+    }
+}
+
+
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

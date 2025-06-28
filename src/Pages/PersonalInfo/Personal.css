@@ -1,0 +1,201 @@
+.PersonalContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../../public/images/theme/personaldark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    transition: 0.4s ease;
+}
+
+.Personal_light{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../../public/images/theme/personalInfolight.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    transition: 0.4s ease;
+}
+
+.personallabel{
+    background: url(../../../public/images/theme/personal.jpg);
+    /* background-repeat: no-repeat; */
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-size: 60%;
+    font-size: 60px;
+    animation: imagemover 20s infinite;
+}
+
+.personalContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.personalContent div{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+    width: 40%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(105, 105, 105);
+}
+
+.personalContent div img{
+    height: 45%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    filter: drop-shadow(4px 3px 5px rgb(94, 94, 94));
+    /* background-color: rgb(30, 0, 63);
+    border-radius: 50%;
+    border: 2px solid rgb(2, 2, 94); */
+}
+
+.personalContent div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0px;
+    list-style-type: none;
+    height: 80%;
+    padding-left: 0px;
+    width: 70%;
+}
+
+.personalContent div ul{
+    color: black;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.PersonalCaption{
+    color: rgb(17, 132, 255);
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(118, 115, 115);
+    width:60%;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.li-align{
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+
+
+@keyframes imagemover {
+    0%{
+        background-position: -100px 0px;
+    }
+    100%{
+        background-position: -700px 0px;
+    }
+}
+
+.language{
+    height: 300px;
+}
+
+
+@media (max-width:1250px) {
+    .personalContent{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .personalContent div{
+        width: 80%;
+    }
+}
+
+
+@media (max-width:850px) {
+    .personallabel{
+        font-size: 50px;
+    }
+    .personalContent{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .personalContent div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .language{
+        height: 400px;
+    }
+    .PersonalCaption{
+        width: 100%;
+    }
+    .personalContent div ul{
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    .personallabel{
+        font-size: 40px;
+    }
+    .personalContent div img{
+        height: 100px;
+    }
+    .personalContent div ul{
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .personallabel{
+        font-size: 20px;
+    }
+    .personalContent div img{
+        height: 100px;
+    }
+    .personalContent div ul{
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media (max-width:300px) {
+    .personallabel{
+        font-size: 23px;
+    }
+    .personalContent div img{
+        height: 80px;
+    }
+    .personalContent div{
+        height: 200px;
+    }
+    .personalContent div ul{
+        font-size: 12px;
+        width: 100%;
+    }
+    .PersonalCaption{
+        font-size: 20px;
+    }
+}

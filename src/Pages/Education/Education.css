@@ -1,0 +1,726 @@
+.EduContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../public/images/theme/educationdark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.5s ease-in-out;
+}   
+
+
+.Edu_light{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../public/images/theme/educationlight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.5s ease-in-out;
+}   
+
+.Educationheading,.Experienceheading{
+    font-size: 80px;
+    background-image: url(../../../public/images/theme/experience.jpg);
+    background-clip: text;
+    background-attachment: fixed;
+    background-size: 200px;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: imagemover 10s infinite;
+    filter: drop-shadow(0px 4px 4px #282828);
+    -webkit-text-stroke: 1px rgb(132, 103, 103);
+    font-family: kalam;
+}
+
+
+@font-face {
+    font-family: kalam;
+    src: url(../../../public/fonts/Patrick_Hand/Kalam/Kalam-Bold.ttf);
+}
+
+.EduContainer>label{
+    font-size: 50px;
+    transition-duration: 0.5s;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+
+
+.blockChanger {
+    border: 1px solid;
+    height: 30px;
+    width: 500px;
+    display: flex;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    align-items: center;
+    margin: 20px;
+    height: 50px;
+  }
+
+.blockChanger .labels{
+    position: absolute;
+    left: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    z-index: 0;
+    font-weight: 600;
+}
+  
+.blockChanger .labels label{
+    cursor: pointer;
+}
+  
+.blockChanger span {
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    transition: 0.5s ease;
+    background:linear-gradient(to right,rgba(0, 0, 255, 0.322),rgba(217, 0, 255, 0.289));
+    filter: drop-shadow(0px 0px 50px rgb(0, 0, 0) inset);
+}
+  
+
+.blockChanger [type='radio'] {
+    display: none;
+}
+
+#blockchanger2:checked~span{
+    margin-left: 250px;
+}
+
+.eduandexp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.education{
+    width: 90%;
+    height: max-content;
+    margin-bottom: 30px;    
+}
+
+.edublocks{
+    margin-top: 20px;
+    padding: 20px;
+    padding-right: 0px;
+    background-color: rgba(255, 255, 255, 0.842);
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.edublocks h1{
+    font-size: 30px;
+    color: rgb(60, 1, 100);
+    margin: 0px;
+}
+
+
+.address{
+    color: rgb(0, 67, 138);
+    font-size: 26px;
+}
+
+.edublocks label{
+    font-size: 26px;
+}
+
+
+
+/*experience section*/
+.experience{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.internship{
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.645);
+    border-radius: 20px;
+    transition: .4s;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+
+.codeclause{
+    background-image: linear-gradient(to top right,rgba(146, 255, 219, 0.378),rgba(99, 203, 255, 0.405));
+}
+
+
+.amazon{
+    background-image: linear-gradient(to top right,rgba(255, 200, 98, 0.441),rgba(255, 255, 255, 0.496));
+}
+
+
+.interncover{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    transition: .4s;
+    
+}
+
+
+.internimg{
+    width: 380px;
+    transition: .4s;
+}
+
+.interntitle{
+    font-size: 26px;
+    text-align: center;
+    transition: .4;
+    font-weight: 500;
+
+}
+
+.internbody{
+    overflow: hidden;
+    display: none;
+}
+
+.internbody>p{
+    width: 500px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.internbody>label{
+    display: none;
+}
+
+.internbody>div{
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+}
+
+.internbtn>button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.452);
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    transition: .4s;
+    outline: 1px solid transparent;
+    outline-offset: 15px;
+}
+
+
+.internbtn>button:hover{
+    outline-offset: 0;
+    outline: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+
+.AIML{
+    background-image: linear-gradient(to top right,rgba(88, 255, 216, 0.312),rgba(255, 255, 255, 0.34));
+}
+
+
+
+.internship:hover{
+    width: 700px;
+}
+
+.internship:hover>.interncover>.internimg{
+    width: 200px;
+}
+
+.internship:hover>.internbody>label{
+    width: max-content;
+    overflow: hidden;
+    display: block;
+}
+
+.internship:hover>.interncover>.interntitle{
+    display: none;
+}
+
+
+.internship:hover>.interncover>.internimg{
+    width: 200px;
+}
+
+
+
+.internship:hover .internbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1900px) {
+    .flip-box{
+        height: 95vh;
+        width: 40%;
+    }
+}
+
+
+@media (max-width:1600px) {
+    .flip-box{
+        height: 95vh;
+        width: 50%;
+    }
+    .experience{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:1500px){
+    .blockChanger {
+        width: 400px;
+        height: 50px;
+      }
+    
+    .blockChanger .labels{
+        left: 20px;
+        width: 400px;
+        font-size: 23px;
+        font-weight: 500;
+    }
+    
+      
+    .blockChanger span {
+        width: 200px;
+        height: 50px;
+        transition: 0.5s ease;
+        filter: drop-shadow(0px 0px 50px rgb(0, 0, 0) inset);
+    }
+      
+
+    
+    #blockchanger2:checked~span{
+        margin-left: 200px;
+    }
+}
+
+
+
+@media (max-width:1300px) {
+    .flip-box{
+        width:70%;
+        height:max-content;
+    }
+}
+
+@media (max-width:1000px){
+    .edublocks h1{
+        font-size: 26px;
+    }
+
+    .edublocks label{
+        font-size: 23px;
+    }
+
+    .flip-box{
+        width:70%;
+        height:max-content;
+    }
+}
+
+
+@media (max-width:900px){
+    .edublocks h1{
+        font-size: 23px;
+    }
+
+    .edublocks label{
+        font-size: 20px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .org{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 27px;
+    }
+    .flip-box-back{
+        height: 100vh;
+    }
+    .interncertificate{
+        height: max-content;
+    }
+}
+
+
+@media (max-width:760px){
+    .edublocks h1{
+        font-size: 20px;
+    }
+
+    .edublocks label{
+        font-size: 16px;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .org{
+        font-size: 26px;
+    }
+    .description{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:665px){
+    .edublocks h1{
+        font-size: 18px;
+    }
+
+    .edublocks label{
+        font-size: 16px;
+    }
+    .internship{
+        width: 280px;
+        height: 250px;
+        transition: .4s;
+        flex-direction: column;
+    }
+    .internimg{
+        width: 200px;
+        transition: .4s;
+    }
+    .interntitle{
+        font-size: 20px;
+    }
+    .internship:hover{
+        width: 280px;
+        height: 550px;
+    }
+    .internship:hover>.interncover>.interntitle{
+        display: block;
+    }
+    .internship:hover>.internbody>label{
+        display: none;
+    }
+    .internbody>p{
+        width: auto;
+        font-size: 16px;
+    }
+    .internship:hover>.interncover>.internimg{
+        width: 150px;
+    }
+    .internbtn>button{
+        width: 100px;
+        font-size: 14px;
+        height: 30px;
+    }
+}
+
+@media (max-width:545px){
+    .education{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .blockChanger {
+        width: 400px;
+        height: 50px;
+      }
+    
+    .blockChanger .labels{
+        left: 4vw;
+        width: 400px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+      
+    .blockChanger span {
+        width: 200px;
+        height: 50px;
+        transition: 0.5s ease;
+        filter: drop-shadow(0px 0px 50px rgb(0, 0, 0) inset);
+    }
+      
+    
+    .blockChanger [type='radio'] {
+        display: none;
+    }
+    
+    #blockchanger2:checked~span{
+        margin-left: 198px;
+    }
+    .education{
+        width: 100%;
+        align-items: center;
+    }
+    .edublocks{
+        width: 90%;
+    }
+    .edublocks h1{
+        font-size: 14px;
+    }
+
+    .edublocks label{
+        font-size: 12px;
+    } 
+    
+    .heading{
+        font-size: 26px;
+    }
+    
+    .org{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    .flip-box-back{
+        height: 100vh;
+    }
+    .interncertificate{
+        height: max-content;
+    }
+    .Educationheading,.Experienceheading{
+        font-size: 50px;
+    }
+}
+
+
+
+
+@media (max-width:450px){
+    .blockChanger {
+        width: 250px;
+        height: 40px;
+      }
+    
+    .blockChanger .labels{
+        left: 20px;
+        width: 250px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+      
+    .blockChanger span {
+        width: 130px;
+        height: 40px;
+        transition: 0.5s ease;
+        filter: drop-shadow(0px 0px 50px rgb(0, 0, 0) inset);
+    }
+      
+    
+    .blockChanger [type='radio'] {
+        display: none;
+    }
+    
+    #blockchanger2:checked~span{
+        margin-left: 120px;
+    }
+    .education{
+        width: 100%;
+        align-items: center;
+    }
+    .edublocks{
+        width: 90%;
+    }
+    .edublocks h1{
+        font-size: 11px;
+    }
+
+    .edublocks label{
+        font-size: 10px;
+    }
+
+
+    .flip-box{
+        width: 80%;
+    }
+
+    .backimage1{
+        background-size: 170%;
+    }
+    .backimage2{
+        background-size: 200%;
+    }
+
+
+    .org{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 13px;
+    }
+    .flip-box-back{
+        height: 100vh;
+    }
+    .interncertificate{
+        height: max-content;
+    }
+
+    .Educationheading,.Experienceheading{
+        font-size: 50px;
+    }
+
+
+}
+
+
+@media (max-width:380px){
+    .edublocks h1{
+        font-size: 10px;
+    }
+
+    .edublocks label{
+        font-size: 8px;
+    }
+
+    .heading{
+        font-size: 22px;
+        padding: 3px;
+    }
+    .org{
+        font-size: 16px;
+    }
+    .description{
+        font-size: 13px;
+    }
+    .flip-box-back{
+        height: 100vh;
+    }
+    .interncertificate{
+        height: max-content;
+    }
+
+    .Educationheading,.Experienceheading{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width:350px) {
+    .internship{
+        width: 200px;
+        height: 250px;
+        transition: .4s;
+        flex-direction: column;
+    }
+    .internimg{
+        width: 150px;
+        transition: .4s;
+    }
+    .interntitle{
+        width: auto;
+        font-size: 14px;
+    }
+    .internship:hover{
+        width: 200px;
+        height: 480px;
+    }
+    .internship:hover>.interncover>.interntitle{
+        display: block;
+    }
+    .internship:hover>.internbody>label{
+        display: none;
+    }
+    .internbody>p{
+        width: auto;
+        font-size: 15px;
+    }
+    .internship:hover>.interncover>.internimg{
+        width: 100px;
+    }
+    .internbtn>button{
+        width: 70px;
+        font-size: 10px;
+        height: 20px;
+    }
+}
+
+
+
+
+@media (max-width:300px){
+    .blockChanger {
+        width: 250px;
+        height: 30px;
+      }
+    
+    .blockChanger .labels{
+        left: 7.5vw;
+        width: 250px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+      
+    .blockChanger span {
+        width: 130px;
+        height: 30px;
+        transition: 0.5s ease;
+        filter: drop-shadow(0px 0px 50px rgb(0, 0, 0) inset);
+    }
+      
+    
+    .blockChanger [type='radio'] {
+        display: none;
+    }
+    
+    #blockchanger2:checked~span{
+        margin-left: 120px;
+    }
+
+    .edublocks h1{
+        font-size: 12px;
+    }
+
+    .edublocks label{
+        font-size: 10px;
+    }
+
+
+}

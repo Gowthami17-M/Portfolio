@@ -1,0 +1,952 @@
+.contactcontainer{
+    position: relative;
+    background-color:  #1d1e26;
+    padding-bottom: 20px;
+    border:1px solid rgba(0, 0, 0, 0);
+}
+
+@font-face {
+    font-family: Yanone_Kaffeesatz;
+    src: url(../../../public/fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+
+
+.text{
+    font-family: Yanone_Kaffeesatz;
+    display: flex;
+    gap: 10px;
+    margin: 50px;
+}
+
+
+.wrapper
+{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.letter,.shadow{
+    font-size: 70px;
+}
+
+.shadow{
+    position: absolute;
+    top: 45px;
+    transform: scale(1, -1);
+    background: linear-gradient(to top, #ffffffd7,#ffffffb8,rgba(255, 255, 255, 0.526),rgba(255, 255, 255, 0.068),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+:root {
+    --color-background: #000119;
+    --stroke-width: calc(1em / 16);
+    --font-weight: 700;
+    --letter-spacing: calc(1em / 8);
+  }
+
+.contactcontainer>h1{
+    width: max-content;
+    margin: 50px;
+    
+}
+
+.maincontent{
+    width: 100%;
+}
+
+
+.hellomsg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.hellomsg>form{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    width:500px;
+}
+
+.mailID{
+    font-size: 20px;
+    width: max-content;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    color: rgb(120, 120, 120);
+    transition: .4s;
+}
+
+
+.hellomsg>form>[type="email"]{
+    border: 1px solid rgb(145, 144, 144);
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    position: absolute;
+    top: 37px;
+    z-index: 2;
+    color: white;
+}
+
+.hellomsg>form>[type="email"]:focus{
+    outline-color: rgb(158, 53, 255);
+}
+
+
+.hellomsg>label{
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: #1d1e26;
+    font-size: 40px;
+    padding: 2px;
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing);
+    padding: calc(--stroke-width / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: 5px;
+}
+
+
+.goup{
+    color: rgb(143, 32, 255);
+    top: 0px;
+    left: 5px;
+}
+
+
+
+.sayhii{
+    width: 120px;
+    font-size: 26px;
+    height: 42px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+
+.sayhii:disabled{
+    border-color: gray;
+}
+
+
+.sayhii::after{
+    content:'';
+    height:40px;
+    width:100%;
+    background:transparent;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    border-radius: 6px;
+    transition: 0.4s ;
+    border: none;
+    z-index: 0;
+    background:linear-gradient(to right,blue,rgb(255, 103, 250));
+}
+
+.sayhii>span{
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 20px;
+    color: #fff;
+}
+
+
+.sayhii:hover>span{
+    color: rgb(139, 115, 255);
+}
+
+
+.sayhii:disabled>span{
+    color: rgb(0, 0, 0);
+}
+
+.sayhii:hover{
+    border: 1px solid black;
+}
+
+.sayhii:hover::after{
+    width: 0%;
+    height: 0%;
+    background-color: #510000;
+    border-color: #510000;
+}
+
+.sayhii:disabled::after{
+    width: 100%;
+    height: 100%;
+    background: rgb(175, 173, 173);
+}
+
+
+.contactform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 400px;
+    width: 570px;
+    margin-bottom: 10px;
+    padding-bottom: 60px;
+}
+
+
+.contactme>[type="text"],.contactme>[type="email"],.contactme>textarea{
+    width: 550px;
+    height: 40px;
+    border-radius:5px;
+    font-size: 20px;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid gray;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+
+
+
+.contactme>textarea{
+    max-width: 550px;
+    min-width: 550px;
+    min-height: 80px;
+    max-height: 80px;
+    height: 80px;
+    padding-top: 10px;
+}
+
+
+
+.contactme>label{
+    font-size: 20px;
+    width: max-content;
+    position: absolute;
+    color: rgb(125, 125, 125);
+    transition: .4s;
+    z-index: 0;
+}
+
+
+.contactme>.send{
+    position: relative;
+    top: 400px;
+    width: 100px;
+    overflow: hidden;
+}
+
+
+.contactme>.fname{
+    top: 56px;
+    left: 25px;
+}
+
+.contactme>.emailid{
+    top: 152px;
+    left: 25px;
+}
+
+
+.contactme>.subject{
+    top: 245px;
+    left: 25px;
+}
+
+
+.contactme>.message{
+    top: 350px;
+    left: 25px;
+}
+
+
+.contactme>.inputname{
+    top: 49px;
+    right: 100;
+}
+
+
+.contactme>.inputmail{
+    top: 145px;
+    right: 100;
+}
+
+.contactme>.inputsubject{
+    top: 238px;
+    right: 100;
+}
+
+.contactme>.inputmessage{
+    top: 340px;
+    right: 100;
+}
+
+
+
+.contactme>[type="text"]:focus,.contactme>[type="email"]:focus,.contactme>textarea:focus{
+   outline-color:  rgb(150, 0, 225);
+}
+
+
+.contactme>.nameup{
+    top: 10px;
+    left: 10px;
+    color: rgb(150, 0, 225);
+}
+
+
+.contactme>.mailup{
+    top: 110px;
+    left: 10px;
+    color: rgb(150, 0, 225);
+}
+
+.contactme>.subjup{
+    top: 200px;
+    left: 10px;
+    color: rgb(150, 0, 225);
+}
+
+
+.contactimage{
+    width: 660px;
+    filter: drop-shadow(10px 10px 10px rgb(42, 42, 42));
+}
+
+
+
+.contactme>.msgup{
+    top: 305px;
+    left: 10px;
+    color: rgb(150, 0, 225);
+}
+
+
+.contactme>.send{
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(200, 229, 255);
+    color: rgb(46, 0, 107);
+    text-shadow: 3px 3px 3px rgb(61, 60, 60);
+    cursor: pointer;
+    border: 1px solid;
+    outline: 0px solid;
+    transition: .4s ease;
+    outline-offset: 0;
+}
+
+.contactme>.send:hover{
+    outline: 2px solid #6e73ff;
+    outline-offset: 5px;
+    box-shadow: 0px 0px 50px rgb(201, 187, 255) inset;
+}
+
+.plane{
+    filter:drop-shadow(5px 5px 2px rgb(101, 98, 98));
+    transition-duration: .4s;
+}
+
+
+
+
+.sentstatusdisabled{
+    display: none;
+}
+
+
+.sentstatus{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: max-content;
+    height: max-content;
+    color: black;
+    border-radius: 5px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    z-index: 20;
+}
+
+
+.sentstatus>pre{
+    margin: 0;
+}
+
+.timer{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .2s;
+    background: linear-gradient(to right,rgb(0, 0, 255),rgb(174, 0, 255),rgb(255, 0, 157));
+}
+
+@media (max-width:1100px) {
+    
+    .sentstatus{
+        top: 40px;
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        z-index: 20;
+    }
+
+    .sentstatus>pre{
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:660px) {
+    .contactimage{
+        width: 500px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .text{
+        margin: 50px;
+        margin-left: 20px;
+    }
+
+    .letter,.shadow{
+        font-size: 50px;
+    }
+
+    .hellomsg>form{
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        width:460px;
+    }
+
+    .hellomsg>form>[type="email"]{
+        border: 1px solid rgb(145, 144, 144);
+        width: 450px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        position: absolute;
+        top: 37px;
+        z-index: 2;
+        color: white;
+    }
+
+
+    .contactme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 400px;
+        width: 470px;
+        margin-bottom: 10px;
+        padding-bottom: 60px;
+    }
+
+    .contactme>[type="text"],.contactme>[type="email"],.contactme>textarea{
+        width: 450px;
+        height: 40px;
+        border-radius:5px;
+        font-size: 20px;
+        padding-left: 15px;
+        background-color: transparent;
+        border: 1px solid gray;
+        position: absolute;
+        z-index: 1;
+        color: white;
+    }
+    
+    .contactme>textarea{
+        max-width: 450px;
+        min-width: 450px;
+        min-height: 80px;
+        max-height: 80px;
+        height: 80px;
+        padding-top: 10px;
+    }
+
+    .sentstatus{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        z-index: 20;
+    }
+
+    .sentstatus>pre{
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media (max-width:540px) {
+
+    .text{
+        margin-right: 0px;
+        width: max-content;
+    }
+
+    .letter,.shadow{
+        font-size: 26px;
+    }
+    
+    .shadow{
+        top: 20px;
+    }
+
+
+    .hellomsg>label{
+        font-size: 30px;
+    }
+    .hellomsg>form{
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        width:360px;
+    }
+
+    .hellomsg>form>[type="email"]{
+        border: 1px solid rgb(145, 144, 144);
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        position: absolute;
+        top: 37px;
+        z-index: 2;
+        color: white;
+    }
+
+
+    .contactme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 400px;
+        width: 370px;
+        margin-bottom: 10px;
+        padding-bottom: 60px;
+    }
+
+    .contactimage{
+        width: 400px;
+    }
+
+    .contactme>[type="text"],.contactme>[type="email"],.contactme>textarea{
+        width: 350px;
+        height: 40px;
+        border-radius:5px;
+        font-size: 20px;
+        padding-left: 15px;
+        background-color: transparent;
+        border: 1px solid gray;
+        position: absolute;
+        z-index: 1;
+        color: white;
+    }
+    
+    .contactme>textarea{
+        max-width: 350px;
+        min-width: 350px;
+        min-height: 80px;
+        max-height: 80px;
+        height: 80px;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:400px) {
+
+    .letter,.shadow{
+        font-size: 30px;
+    }
+
+    .shadow{
+        top: 20px;
+    }
+
+    .hellomsg>label{
+        font-size: 26px;
+    }
+
+
+    .hellomsg>form{
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        width:300px;
+    }
+
+    .hellomsg>form>[type="email"]{
+        border: 1px solid rgb(145, 144, 144);
+        width: 290px;
+        height: 40px;
+        font-size: 20px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: transparent;
+        position: absolute;
+        top: 37px;
+        z-index: 2;
+        color: white;
+    }
+
+
+    .contactme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 400px;
+        width: 320px;
+        margin-bottom: 10px;
+        padding-bottom: 60px;
+    }
+
+    .contactimage{
+        width: 300px;
+    }
+
+    .contactme>[type="text"],.contactme>[type="email"],.contactme>textarea{
+        width: 300px;
+        height: 40px;
+        border-radius:5px;
+        font-size: 20px;
+        padding-left: 15px;
+        background-color: transparent;
+        border: 1px solid gray;
+        position: absolute;
+        z-index: 1;
+        color: white;
+    }
+    
+    .contactme>textarea{
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 80px;
+        max-height: 80px;
+        height: 80px;
+        padding-top: 10px;
+    }
+
+    .sentstatus{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 0px;
+        word-spacing: 1px;
+        z-index: 20;
+    }
+
+    .sentstatus>pre{
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width:350px) {
+
+    .text{
+        margin-top:30px;;
+    }
+
+    .letter,.shadow{
+        font-size: 20px;
+    }
+
+    .shadow{
+        top: 20px;
+    }
+
+
+    .mailID{
+        font-size: 16px;
+        top: 42px;
+        left: 22px;
+    }
+
+
+
+    .goup{
+        color: rgb(143, 32, 255);
+        top: 8px;
+        font-size: 16px;
+        left: 15px;
+    }
+    
+
+    .sayhii{
+        font-size: 16px;
+        width: 80px;
+        height: 40px;
+        top: 30px;
+        align-items: center;
+    }
+
+    
+
+
+
+    .sayhii::after{
+        height:38px;
+        width:100%;
+    }
+
+    .sayhii>span{
+        top: 9px;
+        left: 14px;
+    }
+
+
+    .hellomsg>label{
+        font-size: 20px;
+    }
+
+
+    .hellomsg>form{
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        width:250px;
+    }
+
+    .hellomsg>form>[type="email"]{
+        width: 230px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+
+    .contactme{
+        padding: 10px;
+        height: 450px;
+        width: 250px;
+
+    }
+
+    .contactimage{
+        width: 250px;
+    }
+
+    .contactme>[type="text"],.contactme>[type="email"],.contactme>textarea{
+        width: 230px;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    
+    .contactme>textarea{
+        max-width: 230px;
+        min-width: 230px;
+        min-height: 80px;
+        max-height: 80px;
+        height: 80px;
+        padding-top: 10px;
+    }
+
+
+    .contactme>.send{
+        font-size: 16px;
+        width: 100px;
+    }
+
+
+    
+    .contactme>.inputname{
+        top: 40px;
+        right: 100;
+    }
+    
+    
+    .contactme>.inputmail{
+        top: 125px;
+        right: 100;
+    }
+    
+    .contactme>.inputsubject{
+        top: 210px;
+        right: 100;
+    }
+    
+    .contactme>.inputmessage{
+        top: 300px;
+        right: 100;
+    }
+
+
+    
+
+
+
+    
+
+
+    .contactme>.fname{
+        top: 45px;
+        left: 25px;
+        font-size: 16px;
+    }
+    
+    .contactme>.emailid{
+        top: 130px;
+        left: 25px;
+        font-size: 16px;
+    }
+    
+    
+    .contactme>.subject{
+        top: 215px;
+        left: 25px;
+        font-size: 16px;
+    }
+    
+    
+    .contactme>.message{
+        top: 310px;
+        left: 25px;
+        font-size: 16px;
+    }
+    
+    
+    
+
+
+    .contactme>.nameup{
+        top: 15px;
+        left: 10px;
+        color: rgb(150, 0, 225);
+    }
+
+
+    .contactme>.mailup{
+        top: 100px;
+        left: 10px;
+        color: rgb(150, 0, 225);
+    }
+
+    .contactme>.subjup{
+        top: 185px;
+        left: 10px;
+        color: rgb(150, 0, 225);
+    }
+
+    .contactme>.msgup{
+        top: 275px;
+        left: 10px;
+        color: rgb(150, 0, 225);
+    }
+
+    .sentstatus>pre{
+        margin: 0;
+        font-size: 10px;
+    }
+    
+}

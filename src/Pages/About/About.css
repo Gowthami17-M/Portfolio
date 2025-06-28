@@ -1,0 +1,298 @@
+.AboutContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.bgAboutimg{
+    background-image: url(../../../public/images/theme/dark_about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(1px);
+    z-index: 10;
+    transition-duration: 0.4s;
+}
+
+
+.about_light{
+    background-image: url(../../../public/images/theme/light_about.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(1px);
+    z-index: 10;
+    transition-duration: 0.4s;
+}
+
+
+.Abouttext{
+    position: absolute;
+    top: 105%;
+    left:-5%;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutimage{
+    margin: 0;
+    width: 95%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutimage img{
+    width:auto;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid rgb(36, 36, 72);
+    box-shadow: 0px 0px 10px rgb(78, 78, 78);
+}
+
+.aboutimage p span{
+    border: 1px solid;
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }    
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: Patrick;
+    src: url(../../../public/fonts/Patrick_Hand/PatrickHand-Regular.ttf);
+}
+
+.aboutimage p{
+    width: 75%;
+    font-family:Patrick;
+    text-align: justify;
+    font-size: 40px;
+}
+
+
+
+.resumebutton{
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  
+  .resumebutton span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .resumebutton:after{
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to top right,rgb(154, 161, 254),rgb(255, 255, 255));
+    transition: all .35s;
+  }
+  
+  .resumebutton:hover{
+    border:2px solid rgb(255, 255, 255);
+    color: #000000;
+  }
+  
+  .resumebutton:hover:after{
+    text-align: center;
+    width: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+
+@media (max-width:1280px) {
+    .aboutimage img{
+        height: 400px;
+    }
+    .aboutimage p{
+        font-size: 30px;
+        width: 70%;
+    }  
+}
+
+
+@media (max-width:1030px) {
+    .aboutimage img{
+        height: 300px;
+    }
+    .aboutimage p{
+        font-size: 20px;
+        width: 70%;
+    }  
+}
+
+
+
+@media (max-width:1000px) {
+    .Abouttext{
+        top: 103%;
+    }
+    .aboutimage{
+        margin-top: -0px;
+        height: max-content;
+        flex-direction: column;
+    }
+    .aboutimage img{
+        height: 300px;
+    }
+    .aboutimage p{
+        width: 95%;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:920px) {
+    .Abouttext{
+        top: 102%;
+    }
+    .aboutimage img{
+        height: 450px;
+    }
+    .aboutimage p{
+        width: 95%;
+        font-size: 25px;
+    }
+    .resumebutton{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:770px) {
+    .Abouttext{
+        top: 104%;
+    }
+    .aboutimage img{
+        height: 400px;
+    }
+    .aboutimage p{
+        width: 95%;
+        font-size: 26px;
+    }
+    .resumebutton{
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .aboutimage p{
+        font-size: 23px;
+    }
+    .resumebutton{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:550px) {
+
+    .Abouttext{
+        font-size: 26px;
+    }
+
+    .aboutimage img{
+        height: 250px;
+    }
+
+    .aboutimage p{
+        font-size: 20px;
+    }
+    .resumebutton{
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width:380px) {
+    .resumebutton{
+        margin-top: -10px;
+        font-size: 16px;
+    }
+    .Abouttext{
+        font-size: 16px;
+    }
+    .aboutimage img{
+        height: 220px;
+    }
+
+    .aboutimage p{
+        font-size: 20px;
+    }
+
+    
+}
+
+
+@media (max-width:370px) {
+
+    .Abouttext{
+        font-size: 20px;
+    }
+    .aboutimage img{
+        height: 240px;
+    }
+
+    .aboutimage p{
+        font-size: 16px;
+    }
+    .aboutimage p{
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width:280px) {
+    .Abouttext{
+        top: 102%;
+        font-size: 20px;
+    }
+    .aboutimage img{
+        height: 200px;
+    }
+    .aboutimage p{
+        font-size: 16px;
+        width: 95%;
+    }  
+}
+

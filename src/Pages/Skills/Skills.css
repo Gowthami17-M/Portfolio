@@ -1,0 +1,483 @@
+@font-face {
+    font-family: dosis;
+    src: url(../../../public/fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Cavet;
+    src: url(../../../public/fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+.skillContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../../../public/images/theme/skillsdark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .2s ease-out;
+    padding-bottom: 20px;
+}
+
+.skills_light{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../../../public/images/theme/skillslight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .2s ease-out;
+    padding-bottom: 20px;
+}
+
+
+.skillContainer>h1{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family:cursive;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    background-color: #010433;
+    color: transparent;
+    text-shadow: 2px 0px 1px rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+
+.programmingblock,.webblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 30px;
+    /* border:1px solid white */
+}
+
+.programmingblock>.innerblock>h1{
+    /* border:1px solid; */
+    text-align: center;
+    /* background: linear-gradient(to right,rgb(112, 112, 255),rgb(233, 233, 27),rgb(255, 145, 114)); */
+    /* background-clip: text;
+    color: transparent; */
+    font-family: cavet;
+    font-size: 60px;
+    /* -webkit-text-stroke: 1px rgb(76, 76, 76); */
+}
+
+
+.webblock>.innerblock>h1{
+    /* border:1px solid; */
+    text-align: center;
+    font-size: 60px;
+    /* background: linear-gradient(to right,rgb(55, 255, 142),rgba(144, 255, 160, 0.674)); */
+    /* background-clip: text;
+    color: transparent; */
+    font-family: cavet;
+    /* -webkit-text-stroke: 2px rgb(22, 22, 22); */
+}
+
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-color: rgb(131, 131, 131);
+    width: 60%;
+}
+
+.innerblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+
+.innerblock>ul{
+    list-style-image: linear-gradient(to right,rgb(35, 139, 162),rgb(0, 145, 255));
+    font-family: dosis;
+    font-weight: bold;
+}
+
+.webblock{
+    flex-flow: row-reverse;
+}
+
+.programmingblock>img,.webblock>img{
+    width:600px;
+    filter: drop-shadow(10px 10px 5px rgb(52, 52, 52));
+}
+
+
+
+
+.skillsimages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+  }
+  
+  .skillsimages > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 150px;
+    margin: 15px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+  }
+
+
+.skillsimages>div>img{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    filter: drop-shadow(10px 10px 5px rgb(52, 52, 52));
+}
+
+.skillsimages>div>label{
+    display: none;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clang>img,.cpp>img,.python>img,.java>img{
+    position: relative;
+    transition-duration: .4s;
+}
+
+.clang:hover>img,.cpp:hover>img,.python:hover>img,.java:hover>img{
+    transform: translateY(-20%);
+}
+
+
+
+
+.clang:hover label,.cpp:hover label,.java:hover label,.python:hover label{
+    display: flex;
+    margin: 0px;
+    animation: fade .4s;
+}
+
+.clang>label,.cpp>label{
+    color: transparent;
+    background: linear-gradient(to left,rgb(76, 76, 250),rgb(143, 188, 255));
+    font-family: dosis;
+    font-weight: bold;
+    font-size: 30px;
+    background-clip: text;
+}
+
+
+.python>label{
+    color: transparent;
+    background: linear-gradient(to right,rgb(64, 96, 144),rgb(252, 255, 65));
+    font-family: dosis;
+    font-weight: bold;
+    font-size: 30px;
+    background-clip: text;
+}
+
+
+.java>label{
+    color: transparent;
+    background: linear-gradient(to left,rgb(255, 120, 9),rgb(65, 91, 130));
+    font-family: dosis;
+    font-weight: bold;
+    font-size: 30px;
+    background-clip: text;
+}
+
+
+.mongo>img{
+    height: 100px;
+}
+
+
+.mongo>img,.html>img,.css>img,.javascript>img,.node>img,.react>img{
+    position: relative;
+    transition-duration: .4s;
+}
+
+.mongo:hover>img,  .html:hover>img,  .css:hover>img,  .javascript:hover>img,  .node:hover>img,  .react:hover>img{
+    transform: translateY(-20%);
+}
+
+
+
+
+.mongo:hover>label,  .html:hover>label,  .css:hover>label,  .javascript:hover>label,  .node:hover>label,  .react:hover>label{
+    display: flex;
+    margin: 0px;
+    animation: fade .4s;
+    font-weight: bold;
+}
+
+
+.html>label{
+    color: rgb(255, 36, 2);
+}
+
+.javascript>label{
+    color: rgb(184, 184, 16);
+}
+
+
+.node>label{
+    color:green;
+}
+
+.react>label{
+    color:rgb(130, 224, 255);
+}
+
+
+.css>label{
+    color: rgb(41, 84, 255);
+}
+
+
+.mongo>label{
+    color: rgb(6, 151, 6);
+}
+
+
+
+
+@media (max-width:1550px) {
+    .programmingblock,.webblock{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .skillsimages>div>img{
+        width: 80px;
+    }
+    .skillsimages>div>label{
+        font-size: 20px;
+    }   
+
+}
+
+@media (max-width:1485px) {
+
+    .skillsimages>div>img{
+        width: 90px;
+    }
+    .skillsimages>div>label{
+        font-size: 20px;
+    }    
+}
+
+
+
+@media (max-width:1250px) {
+    .programmingblock>img,.webblock>img
+    {
+        margin:0px;
+    }
+
+    .innerblock{
+        width: 98%;
+    }
+    .innerblock>ul{
+        text-align: justify;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+}
+
+
+
+@media (max-width:1000px){
+    .skillsimages>div>img{
+        width: 70px;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    .programmingblock,.webblock{
+        margin:0;
+    }
+    .programmingblock>img,.webblock>img
+    {
+        width: 500px;
+    }
+    .programmingblock>.innerblock>h1{
+        font-size: 40px;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 40px;
+    }
+    .innerblock>ul{
+        font-size: 26px;
+    }
+    .skillContainer>h1{
+        font-size: 35px;
+    }
+    .innerblock>ul{
+        padding-left: 20px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .skillContainer>h1{
+        font-size: 30px;
+    }
+    .programmingblock>img,.webblock>img
+    {
+        width: 400px;
+    }
+    .programmingblock>.innerblock>h1{
+        font-size:35px;
+    }
+    hr{
+        width: 80%;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 35px;
+    }
+    .innerblock>ul{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .skillsimages>div{
+        width: 70px;
+        height: 80px;
+        margin:6px;
+    }
+    .skillsimages>div>img{
+        width: 50px;
+    }
+    .skillsimages>div>label{
+        font-size: 16px;
+    } 
+}
+
+@media (max-width:450px) {
+    .skillContainer>h1{
+        font-size: 26px;
+    }
+    .programmingblock>img,.webblock>img
+    {
+        width: 350px;
+    }
+    .programmingblock>.innerblock>h1{
+        font-size:30px;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 30px;
+    }
+    .innerblock>ul{
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .skillsimages>div{
+        width: 50px;
+        height: 80px;
+        margin:6px;
+    }
+
+    .mongo>img{
+        height: 40px;
+    }
+    .skillsimages>div>img{
+        width: 40px;
+    }
+
+    .skillsimages>div>label{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width:380px) {
+    .skillContainer>h1{
+        font-size: 23px;
+    }
+    .programmingblock>img,.webblock>img
+    {
+        width: 300px;
+    }
+    .programmingblock>.innerblock>h1{
+        font-size:26px;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 26px;
+    }
+    .innerblock>ul{
+        font-size: 18px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+
+}
+
+
+
+@media (max-width:350px) {
+    .programmingblock>.innerblock>h1{
+        font-size:23px;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 23px;
+    }
+    .innerblock>ul{
+        font-size: 16px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+}
+
+
+
+@media (max-width:300px) {
+    .programmingblock>img,.webblock>img
+    {
+        width: 200px;
+    }
+    .skillContainer>h1{
+        font-size: 20px;
+    }
+    .programmingblock>.innerblock>h1{
+        font-size:20px;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:250px) {
+    .programmingblock>.innerblock>h1{
+        font-size:20px;
+    }
+    .programmingblock>.innerblock>h1{
+        font-size:15px;
+    }
+    .webblock>.innerblock>h1{
+        font-size: 15px;
+    }
+    .innerblock>ul{
+        font-size: 11px;
+    }
+}
