@@ -103,6 +103,3 @@ app.get('/printpost',(req,res)=>{
 })
 
 
-app.listen(3030,()=>{
-    console.log('server starts on port 3030')
-})

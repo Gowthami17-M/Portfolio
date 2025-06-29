@@ -100,7 +100,10 @@ function Contact(props){
         const mail = document.getElementById('hiimail').value
 
         Axios
-            .post('https://madhuserver.vercel.app/sendhiimail',{'Email':mail,'message':'Hii'})
+            .post(
+  'https://portfolio-backend-gpgxrv7qa-madhu-gowthamis-projects.vercel.app/api/sendhiimail',
+  { Email: mail, message: 'Hii' }
+)
             .then(response=>{
                 setResult(response.data.success);
                 setissent(true)
@@ -127,7 +130,7 @@ function Contact(props){
       const emailid = document.getElementById('emailid').value;
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
-      Axios.post('https://madhuserver.vercel.app/sendcontactform', { 'Email': emailid, 'subject': subject, 'name': name, 'message': message })
+      Axios.post('https://portfolio-backend-gpgxrv7qa-madhu-gowthamis-projects.vercel.app/api/sendcontactform',{ 'Email': emailid, 'subject': subject, 'name': name, 'message': message })
         .then(response => {
           setResult(response.data.success);
           setissent(true);
@@ -218,7 +221,8 @@ function Contact(props){
                 <hr/>
 
                 <header className="contactform">
-                    <img src={require("./contact.png")} className="contactimage"></img>
+                    <img src={require("./contact.png")} className="contactimage" alt="contact" />
+
                     <form className="contactme" onSubmit={sendContactMail} name="contactform" id='contactform'>
                         <input type="text" name="fname" id='fname' value={content[1]} className="inputname" onFocus={handleFocus} onBlur={handleBlur} onChange={handleChange} required style={{color:theme==='dark'?'black':'',borderColor:theme==='dark'?'black':''}}/>
                         <label className={mailfocused[1]?'fname nameup':'fname'}>Enter your Name</label>
