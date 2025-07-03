@@ -29,7 +29,7 @@ function About(props){
                 </div>
 
                 <div>
-                  <Link to="https://drive.google.com/file/d/1xiIO-81Tc5f3MI0xOshGjU4oGi-Gz-po/view?usp=sharing" target="_blank"><button className="resumebutton" style={{borderColor:theme==='dark'?'black':''}}><span style={{color:theme==='dark'?'black':''}}>View Resume</span></button></Link>
+                  <Link to="https://drive.google.com/file/d/1umtLrTCGMhWL8kxG4CHyZlvDv5Kx9BS8/view?usp=sharing" target="_blank"><button className="resumebutton" style={{borderColor:theme==='dark'?'black':''}}><span style={{color:theme==='dark'?'black':''}}>View Resume</span></button></Link>
                 </div>
             </header>
         </div>
