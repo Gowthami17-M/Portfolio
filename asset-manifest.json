@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.90598427.css",
-    "main.js": "/Portfolio/static/js/main.f97e7799.js",
+    "main.js": "/Portfolio/static/js/main.c9eb467a.js",
     "static/media/prediction.mp4": "/Portfolio/static/media/prediction.7960189f7371ed532468.mp4",
     "static/media/clock.mp4": "/Portfolio/static/media/clock.ae2105ffec8e5a0eb6ef.mp4",
     "static/media/certificates_light.jpg": "/Portfolio/static/media/certificates_light.0489b8fe5ac9dbbdbf7c.jpg",
@@ -21,7 +21,6 @@
     "static/media/Caveat-VariableFont_wght.ttf": "/Portfolio/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
     "static/media/night.jpg": "/Portfolio/static/media/night.796b0e6fabf5cbf09131.jpg",
     "static/media/spoken_tutorial.jpg": "/Portfolio/static/media/spoken_tutorial.070d2149eb6930878ca0.jpg",
-    "static/media/image1.jpg": "/Portfolio/static/media/image1.b92df8931afffc8c0b29.jpg",
     "static/media/Frontened.jpg": "/Portfolio/static/media/Frontened.a2ca6649abf0733ad263.jpg",
     "static/media/React.png": "/Portfolio/static/media/React.81ed438b18e24116794d.png",
     "static/media/aicte.png": "/Portfolio/static/media/aicte.6309b5445f22914c9ded.png",
@@ -61,10 +60,10 @@
     "static/media/light_intro.webp": "/Portfolio/static/media/light_intro.3d03905dc89607e31704.webp",
     "index.html": "/Portfolio/index.html",
     "main.90598427.css.map": "/Portfolio/static/css/main.90598427.css.map",
-    "main.f97e7799.js.map": "/Portfolio/static/js/main.f97e7799.js.map"
+    "main.c9eb467a.js.map": "/Portfolio/static/js/main.c9eb467a.js.map"
   },
   "entrypoints": [
     "static/css/main.90598427.css",
-    "static/js/main.f97e7799.js"
+    "static/js/main.c9eb467a.js"
   ]
 }
